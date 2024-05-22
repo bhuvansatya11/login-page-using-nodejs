@@ -1,11 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 const session = require('express-session');
 const flash = require('connect-flash');
 const bcryptjs = require('bcryptjs');
-const User = require('./models/user');
-const bodyParser = require('body-parser');
+const User = require('C:/Users/pavan/OneDrive/Desktop/login_forn/login-page-using-nodejs/models/user.js');
+
+const mongoose = require('mongoose');
+
+const UserSchema = new mongoose.Schema({
+    // your schema definition here
+});
+
+module.exports = mongoose.models.User || mongoose.model('User', UserSchema);
 
 const app = express();
 

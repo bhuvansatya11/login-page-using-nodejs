@@ -1,8 +1,10 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('C:/Users/pavan/OneDrive/Desktop/login_forn/login-page-using-nodejs/models/user.js');
 
+
+// Now you can use the User model
 // Login Page
 router.get('/login', (req, res) => res.render('login'));
 
